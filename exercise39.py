@@ -31,3 +31,5 @@ del stuff['city']
 del stuff[1]
 del stuff[2]
 print(stuff)
+
+print("####################################################")
