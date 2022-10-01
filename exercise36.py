@@ -63,6 +63,15 @@ def english_lang():
             #print("Enter your amount.")
             amount = int(input("Entre amount=")) 
 
+            b = input("Comfirm your amount: ")
+            if b == "yes":
+                valid()
+            elif b == "no":
+                print("Last transacation is Disabled.")
+                exit(0)
+            else:
+                exit(0)            
+
             if amount >= 100 and amount <= 50000 : 
                 s = 0
                 for i in range(1,500):
@@ -240,7 +249,17 @@ def start():
         print("You chose the wrong language...")
         print("select your language: ")
         print("marathi,", "hindi,", "english")
+        
     choice = input("> ")
+
+    if choice == "marathi":
+        marathi_lang()
+
+    elif choice == "hindi":
+        hindi_lang()
+
+    elif choice == "english":
+        english_lang()
     exit(0)
 
 start()
