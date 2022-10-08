@@ -103,7 +103,7 @@ def marathi_lang():
 
         else :
             print("तुमचा ४ अंकी पिन चुकीचा आहे.")   
-            exit(0)
+            #exit(0)
 
     if choice == "history":
         print("तुमचा ४ अंकी पिन टाका.")
@@ -134,6 +134,7 @@ def marathi_lang():
             elif a=="e":
                 exit(0)
             else:
+                print("तुमचा ४ अंकी पिन चुकीचा आहे.")
                 exit(0)    
 
 
