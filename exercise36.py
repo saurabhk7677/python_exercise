@@ -52,6 +52,7 @@ def english_lang():
             elif a=="e":
                 exit(0)
             else:
+                print("your 4 digit pin has wrong.")
                 exit(0)    
 
 
@@ -214,7 +215,6 @@ def hindi_lang():
         pin = int(input("> "))
 
         if pin > 999 and pin < 10000 :
-            #print("Enter your amount.")
             amount = int(input("Entre amount=")) 
 
             if amount >= 100 and amount <= 50000 : 
